@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon"
+        href="https://images.vexels.com/media/users/3/224203/isolated/preview/2fb0e813bdc56c5935b6c2433f551c83-logotipo-da-sacola-de-compras.png">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:::Lista de Tarefas:::</title>
+</head>
+
+<body>
+
+    
+        <h1>Lista de Tarefas</h1>
+        <div class="fundo">
+        <input type="text" id="taskInput" placeholder="Digite uma Tarefa">
+        <button class="add" onclick="addTask()">Adicionar Item</button>
+        <ul id="taskList">
+
+        </ul>
+
+        <img class="img1" src="https://media4.giphy.com/media/kr75uAZGGUFTzdHgsC/source.gif" alt="">
+        <img class="img2" src="https://media4.giphy.com/media/kr75uAZGGUFTzdHgsC/source.gif" alt="">
+    </div>
+    <script>
+        function addTask() {
+            var taskInput = document.getElementById("taskInput");
+            var taskText = taskInput.value.trim()
+
+
+            if (taskList !== "") {
+                varList = document.getElementById("taskList");
+                var li = document.createElement("li");
+                li.className = "taskItem";
+                li.innerHTML = taskText + '<button class="remover" onclick="removerTask(this)">Remover</button>';
+                taskList.appendChild(li);
+                taskInput.value = "";
+            } else {
+                alert("Por favor, insira uma tarefa válida.");
+            }
+
+        }
+
+        function removerTask(button) {
+            var li = button.parentNode;
+            var ul = li.parentNode;
+            ul.removeChild(li);
+        }
+
+        document.getElementById("taskInput").addEventListener
+            ("keypress", function (event) {
+                if (event.key === "Event") {
+                    addTask();
+                }
+            });
+
+    </script>
+
+    <footer>Feito Por Vitor Martins &copy;</footer>
+
+</body>
+
+</html>

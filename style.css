@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+body{
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230620/pngtree-a-3d-marketplace-for-shopping-and-beyond-image_3645872.jpg);
+    background-repeat: no-repeat;
+    background-size: 1460px 100vh;
+    font-family: texto;
+}
+
+@font-face {
+    font-family: texto;
+    src: url(font/Loja.ttf);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-left: 33%;
+    border-radius: 5px;
+    background: green;
+    border: solid black 5px;
+    padding: 5px;
+    max-width: 400px;
+}
+
+input{
+    font-family: texto;
+    margin-left: 34%;
+    font-size: 1.5em;
+    border-radius: 4px;
+}
+
+li{
+    margin-top: 10px;
+    margin-left: 34%;
+    font-size: 2em;
+    background: #2fb3ff;
+    border: solid #2082af 3px;
+    border-radius: 3px;
+    max-width: 180px;
+    padding-bottom: 3px;
+    padding-top: 2.5px;
+    padding-left: 5px;
+}
+
+.remover{
+    margin-left: 10px;
+    font-size: 20px;
+    background: #ff2f2f;
+    border: solid #af2020 3px;
+    border-radius: 3px;
+}
+
+.add{
+    font-size: 1.5em;
+    background: #adff2f;
+    border: solid #76af20 3px;
+    border-radius: 3px;
+}
+
+img{
+    position: absolute;
+    top: 120px;
+}
+
+.img1{
+    position: absolute;
+    right: 20px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.img2{
+    position: absolute;
+    left: 20px;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    background: #000000e1;
+    color: white;
+    font-size: 1.6em;
+    padding: 15px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-left: 41.5%;
+    padding-right: 41.4%;
+    margin-bottom: -10px;
+}
